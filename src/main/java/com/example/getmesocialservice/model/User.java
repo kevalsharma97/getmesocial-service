@@ -1,9 +1,12 @@
 package com.example.getmesocialservice.model;
 
+import org.springframework.data.annotation.Id;
+
 public class User
 {
 
-    private int userId;
+    @Id
+    private String id;
     private String name;
     private String address;
     private int age;
@@ -48,11 +51,11 @@ public class User
         this.profilePicUrl = profilePicUrl;
     }
 
-    public int getUserId() {
-        return userId;
+    public String getId() {
+        return id;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setId(String id) {
+        this.id = id;
     }
 }
